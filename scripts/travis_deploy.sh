@@ -29,7 +29,7 @@ fi
 output="index.html"
 git checkout "${deployment}"
 echo "Generating updated history report '${output}'."
-memote report history --filename="${output}"
+memote report history --filename="${output}" --model e_coli_core.xml
 
 # Add, commit and push the files.
 git add "${output}"
